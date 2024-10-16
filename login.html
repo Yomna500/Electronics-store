@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="E-commerce website login" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-blue-100">
+    <header id="header"></header>
+    <main
+      class="flex flex-col my-40 gap-2 m-auto shadow-lg bg-white md:px-10 px-6 py-10 md:w-8/12 lg:w-3/5"
+    >
+      <p class="font-bold text-center text-2xl">User login</p>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Please Enter Your E-mail "
+        class="border-blue-300 rounded-xl focus:outline-none focus:ring focus:ring-blue-300 border-solid border-2 rounded-md flex flex items-center justify-center p-2 w-full"
+        required
+      />
+      <p id="emailError" class="text-sm text-red-400 px-3"></p>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Please Enter Your password"
+        class="border-blue-300 rounded-xl focus:outline-none focus:ring focus:ring-blue-300 border-solid border-2 rounded-md flex items-center justify-center p-2 w-full"
+        required
+      />
+      <p id="passError" class="text-sm text-red-400 px-3"></p>
+      <button
+        id="button"
+        class="bg-blue-500 rounded-md text-white flex flex items-center justify-center p-2 w-full"
+      >
+        Login
+      </button>
+      <p class="text-center">
+        Don't have an account?
+        <a href="register.html" class="text-blue-500">Register</a>
+      </p>
+    </main>
+
+    <footer
+      class="bg-blue-200 text-center lg:text-left mt-10"
+      id="footer"
+    ></footer>
+    <script src="js/footer.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
